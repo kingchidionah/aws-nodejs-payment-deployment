@@ -188,15 +188,15 @@ http://<YOUR_ELASTIC_IP>:3000
 <table>
   <tr>
     <td width="33%">
-      <img src="docs/screenshots/01-iam-user.png" alt="IAM User Creation" />
+      <img src="docs/screenshots/01-iam-user-creation.png" alt="IAM User Creation" />
       <p align="center"><sub><b>IAM User Creation</b></sub></p>
     </td>
     <td width="33%">
-      <img src="docs/screenshots/02-ec2-launch.png" alt="EC2 Instance Launch" />
+      <img src="docs/screenshots/11-launch-success.png" alt="EC2 Instance Launch" />
       <p align="center"><sub><b>EC2 Instance Launch</b></sub></p>
     </td>
     <td width="33%">
-      <img src="docs/screenshots/03-security-group.png" alt="Security Group Config" />
+      <img src="docs/screenshots/09-security-group-rules.png" alt="Security Group Config" />
       <p align="center"><sub><b>Security Group Rules</b></sub></p>
     </td>
   </tr>
@@ -207,11 +207,11 @@ http://<YOUR_ELASTIC_IP>:3000
 <table>
   <tr>
     <td width="50%">
-      <img src="docs/screenshots/04-ssh-connection.png" alt="SSH Connection" />
+      <img src="docs/screenshots/15-ssh-connection.png" alt="SSH Connection" />
       <p align="center"><sub><b>SSH Connection</b></sub></p>
     </td>
     <td width="50%">
-      <img src="docs/screenshots/05-app-running.png" alt="Application Running" />
+      <img src="docs/screenshots/24-app-in-browser.png" alt="Application Running" />
       <p align="center"><sub><b>Application Live</b></sub></p>
     </td>
   </tr>
