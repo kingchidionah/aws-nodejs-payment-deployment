@@ -131,13 +131,47 @@ Error: Cannot find module 'express'
 **Solution:**
 ```bash
 # Navigate to project directory
-cd ~/AWS-Session
+cd ~/aws-nodejs-payment-deployment
 
 # Install dependencies
 npm install
 
 # Try starting again
 npm start
+
+
+## 🔐 Dependency Security Notice (npm audit)
+
+During dependency installation using `npm install`, npm reports a small number of **high-severity vulnerabilities**:
+
+
+### 📌 Why This Happens
+
+These vulnerabilities originate from **transitive dependencies** that are used strictly for **development purposes** (for example, tooling such as `nodemon` and related notifier packages).
+
+They are:
+- Not part of the application’s runtime logic
+- Not executed in production
+- Commonly flagged in Node.js development environments
+
+---
+
+### 🧠 Risk Assessment
+
+| Aspect | Assessment |
+|------|-----------|
+Affected packages | Development-only dependencies |
+Production impact | None |
+Runtime exposure | No |
+Exploitability | Low |
+Environment | Learning / non-production |
+
+A production-only audit confirms this assessment:
+
+```bash
+npm audit --production
+
+
 ```
 
 ---
@@ -227,7 +261,7 @@ ssh -i ~/.ssh/nodejs-app-key.pem ubuntu@<ELASTIC_IP>
 ps aux | grep node
 
 # If not running, start it
-cd ~/AWS-Session
+cd ~/aws-nodejs-payment-deployment
 npm start
 ```
 
